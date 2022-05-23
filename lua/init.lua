@@ -11,7 +11,7 @@ require "config/bufferline"
 require "config/lualine"
 require "config/nvim-tree"
 require 'config/nvim-comment'
-require 'config/nvim-treesitter'
+-- require 'config/nvim-treesitter'
 require 'config/telescope'
 
 -- cmp补全

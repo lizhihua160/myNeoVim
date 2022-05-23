@@ -3,7 +3,7 @@
 require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     auto_reload_on_write = true,
     disable_netrw = false,
-    hide_root_folder = false,
+    hide_root_folder = true,
     hijack_cursor = false,
     hijack_netrw = true,
     hijack_unnamed_buffer_when_opening = false,
@@ -12,7 +12,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     open_on_setup_file = false,
     open_on_tab = false,
     sort_by = "name",
-    update_cwd = false,
+    update_cwd = true,
     view = {
         width = 25,
         height = 30,

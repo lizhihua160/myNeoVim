@@ -3,6 +3,13 @@ lua require "init"
 " *
 inoremap * *
 
+" 主题
+" syntax enable
+" set background=dark
+" set background=light
+" colorscheme solarized
+
+
 " 指定复制，粘贴软件位置
 let g:clipboard = {
 \ 'name': 'win32yank',
@@ -16,7 +23,6 @@ let g:clipboard = {
 \ },
 \ 'cache_enabled': 0,
 \ }
-
 
 " 指定python位置
     let g:python_host_skip_check=1
@@ -64,7 +70,33 @@ let g:clipboard = {
     let g:asynctasks_term_pos = 'external'
 
 " rainbow
-    let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+" always on
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " 代码格式化
     func! FormatSrc()
@@ -177,3 +209,47 @@ let g:clipboard = {
     let g:vista#renderer#icons = {'subroutine': '羚', 'method': '', 'func': '', 'variables': '', 'namespace': '', 'field': '', 'interface': '', 'type': '', 'packages': '', 'property': '襁', 'implementation': '', 'default': '', 'augroup': 'פּ', 'macro': '', 'enumerator': '', 'const': '', 'macros': '', 'map': 'פּ', 'fields': '', 'functions': '', 'enum': '', 'function': '', 'target': '', 'typedef': '', 'variable': '', 'modules': '', 'constant': '', 'struct': '', 'types': '', 'module': '', 'typeParameter': '', 'package': '', 'class': '', 'member': '', 'var': '', 'union': '鬒', 'constructor': ''}
 
 
+" vim-floaterm
+    let g:floaterm_wintype='split'
+    let g:floaterm_width = 1.0
+    let g:floaterm_height = 0.3
+
+" vim-emmet
+    let g:user_emmet_mode='n'    "enable n mode.
+    let g:user_emmet_install_global = 0
+    autocmd FileType markdown,html,css EmmetInstall
+    let g:user_emmet_leader_key='<leader>'    "<leader>,不全
+
+" nvim-tree默认快捷键
+"
+" y 复制文件名称
+" Y 复制文件相对路径
+" gy 复制文件绝对路径
+" o或者<CR>会打开，关闭目录，或者打开文件
+" <BS>会递归关闭目录直至根目录
+" <C-]>会切换到光标目录且以其作为根目录
+" a会创建文件，如果在最后添加 '/' 则会生成目录
+" r重命名文件
+" C-r重命名文件
+" x切剪文件
+" c拷贝文件
+" p复制文件
+" d删除文件，会提示
+" D删除文件，可以在回收站找到，但是只支持Unix系统
+" s会使用当前系统默认工具打开文件，如果是文件，则用nvim打开文件；如果是文件夹，用资源管理器打开文件目录所在
+" C-k会显示文件或文件夹提示，如绝对路径，大小，创建/访问/修改时间
+" f会过滤文件，相当于在windows中在资源管理器输入文件名，然后过滤文件
+" q关闭
+
+" vim-surround默认快捷键
+"
+" ysiw + ", ([{带空格, )]}不带空格
+" ysiwb, 不带空格的()
+" ysiwB, 不带空格的{}
+" 整行前后加<div>, yss<div>
+" v模式下选中区域前后加", <div>： v选中，大S，", <div>。
+" cs"', 作用于整行, 双引号改成单引号
+" ds", 作用于整行，删除双引号
+
+" vim-repeat
+" .重复上一次的操作

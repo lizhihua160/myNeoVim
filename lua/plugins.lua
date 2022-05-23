@@ -4,8 +4,9 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'    -- 插件管理器
 
     -- 主题
-    -- use 'tomasr/molokai'            -- molokai主题
+    use 'tomasr/molokai'            -- molokai主题
     use 'sainnhe/sonokai'
+    use 'altercation/vim-colors-solarized'
 
     use 'Yggdroot/indentLine'              -- 分割线
 
@@ -52,13 +53,13 @@ return require('packer').startup(function()
     use 'octol/vim-cpp-enhanced-highlight'    -- C++语法高亮
 
     -- difference color for pairs
-    use 'luochen1990/rainbow'                 
+    use 'kien/rainbow_parentheses.vim'
 
     -- auto-pairs
     use 'jiangmiao/auto-pairs'              
 
     -- nvim-treesitter
-    use 'nvim-treesitter/nvim-treesitter'
+    -- use 'nvim-treesitter/nvim-treesitter'
 
     -- cmp自动补全
     use 'neovim/nvim-lspconfig'
@@ -91,6 +92,14 @@ return require('packer').startup(function()
     -- tagbar
     use 'liuchengxu/vista.vim'
    
+    -- emmet-vim
+    use 'mattn/emmet-vim'
+    
+    -- vim-repeat
+    use 'tpope/vim-repeat'
+
+    use 'gko/vim-coloresque'
+
 end)
 
 

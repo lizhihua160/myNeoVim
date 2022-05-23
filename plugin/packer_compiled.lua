@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["filetype.nvim"] = {
     loaded = true,
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\filetype.nvim",
@@ -149,6 +154,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  molokai = {
+    loaded = true,
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\molokai",
+    url = "https://github.com/tomasr/molokai"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -169,11 +179,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
@@ -189,10 +194,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  rainbow = {
+  ["rainbow_parentheses.vim"] = {
     loaded = true,
-    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rainbow",
-    url = "https://github.com/luochen1990/rainbow"
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rainbow_parentheses.vim",
+    url = "https://github.com/kien/rainbow_parentheses.vim"
   },
   sonokai = {
     loaded = true,
@@ -209,6 +214,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-coloresque"] = {
+    loaded = true,
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-coloresque",
+    url = "https://github.com/gko/vim-coloresque"
+  },
+  ["vim-colors-solarized"] = {
+    loaded = true,
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-colors-solarized",
+    url = "https://github.com/altercation/vim-colors-solarized"
+  },
   ["vim-cpp-enhanced-highlight"] = {
     loaded = true,
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-cpp-enhanced-highlight",
@@ -223,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
   },
   ["vim-surround"] = {
     loaded = true,

@@ -49,11 +49,12 @@ cmp.setup {
             cmp.config.compare.recently_used,
             cmp.config.compare.kind,
             cmp.config.compare.length,
-            -- cmp.config.compare.offset,
-            -- cmp.config.compare.score,
-            -- cmp.config.compare.order,
+            cmp.config.compare.offset,
+            cmp.config.compare.score,
+            cmp.config.compare.order,
         },
     },
+
     mapping = cmp.mapping.preset.insert (
     {
         ["<UP>"] = cmp.mapping.select_prev_item(),
@@ -158,6 +159,7 @@ cmp.setup.cmdline(':', {
 })
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+capabilities.textDocument.completion.completionItem.snippetSupport = true
     -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 require('lspconfig').clangd.setup {
     cmd = {
@@ -182,5 +184,10 @@ local signature_config = {
     handler_opts = { border = "single" },
     max_width = 80,
 }
-require("lsp_signature").setup(signature_config)
+-- require("lsp_signature").setup(signature_config)
 
+require ('lspconfig').emmet_ls.setup{
+    -- on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+}
