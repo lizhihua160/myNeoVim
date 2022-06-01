@@ -9,7 +9,6 @@ inoremap * *
 " set background=light
 " colorscheme solarized
 
-
 " 指定复制，粘贴软件位置
 let g:clipboard = {
 \ 'name': 'win32yank',
@@ -23,12 +22,6 @@ let g:clipboard = {
 \ },
 \ 'cache_enabled': 0,
 \ }
-
-" 指定python位置
-    let g:python_host_skip_check=1
-    let g:python_host_prog = python_path
-    let g:python3_host_skip_check=1
-    let g:python3_host_prog = python_path
 
 " cpp语法高亮
     let g:cpp_class_scope_highlight = 1
@@ -253,3 +246,12 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " vim-repeat
 " .重复上一次的操作
+"
+
+" 中英文切换, 没有效果
+" let g:XkbSwitchLib = "D:\tools\xkb-switch-win-libxkbswitch64.dll"
+" let g:XkbSwitchEnabled = 1
+" let g:XkbSwitchIMappings   = ['cn']
+"
+
+

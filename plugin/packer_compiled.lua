@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\filetype.nvim",
     url = "https://github.com/nathom/filetype.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "C:\\Users\\lizhh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",

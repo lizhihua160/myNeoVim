@@ -37,7 +37,6 @@ vim.api.nvim_set_keymap('s', 'l', 'i<ESC>cwl', opts)
 vim.api.nvim_set_keymap('s', 'H', 'i<ESC>cwH', opts)
 vim.api.nvim_set_keymap('s', 'L', 'i<ESC>cwL', opts)
 
-
 -- C-c, 复制, C-v粘贴, C-x剪切, C-z撤销, C-a全选
 mapkey('n', '<C-c>', '"+y')
 mapkey('n', '<C-v>', '"+p')
@@ -48,6 +47,7 @@ mapkey('v', '<C-x>', '"+x')
 mapkey('n', '<C-z>', 'u')
 vim.api.nvim_set_keymap('i', '<C-z>', '<ESC>u<ESC>i', opts)
 vim.api.nvim_set_keymap('i', '<C-v>', '<ESC>"+p<ESC>a', opts)
+
 vim.api.nvim_set_keymap('n', 'xa', ':xa<CR>', opts)   -- xa保存所有文件并退出
 vim.api.nvim_set_keymap('i', '<C-s>', '<ESC>:w<CR>', opts)
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', opts)
@@ -58,8 +58,14 @@ vim.api.nvim_set_keymap('i', '<C-a>', '<ESC>^i', opts)
 vim.api.nvim_set_keymap('i', '<C-e>', '<ESC>A', opts)
 vim.api.nvim_set_keymap('n', '<C-a>', '<ESC>^', opts)
 vim.api.nvim_set_keymap('n', '<C-e>', '<ESC>$', opts)
+vim.api.nvim_set_keymap('v', '<C-a>', '^', opts)
+vim.api.nvim_set_keymap('v', '<C-e>', '$', opts)
 
-        -- hello
+-- C-d，删除头结尾
+vim.api.nvim_set_keymap('i', '<C-d>', '<ESC>ld$a', opts)
+vim.api.nvim_set_keymap('n', '<C-d>', '<ESC>d$', opts)
+vim.api.nvim_set_keymap('v', '<C-d>', '$d', opts)
+
 -- tab, shift-tab回退
 mapkey('n', '<tab>', 'v>')
 mapkey('n', '<s-tab>', 'v<')

@@ -7,6 +7,7 @@ return require('packer').startup(function()
     use 'tomasr/molokai'            -- molokai主题
     use 'sainnhe/sonokai'
     use 'altercation/vim-colors-solarized'
+    use  'ellisonleao/gruvbox.nvim'
 
     use 'Yggdroot/indentLine'              -- 分割线
 
@@ -99,6 +100,10 @@ return require('packer').startup(function()
     use 'tpope/vim-repeat'
 
     use 'gko/vim-coloresque'
+
+
+    -- 切换输入法
+    -- use 'lyokha/vim-xkbswitch'   -- 没有效果
 
 end)
 

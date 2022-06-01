@@ -20,7 +20,7 @@ vim.opt.fileencodings = 'ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1'
 vim.opt.completeopt = 'menu,menuone,noselect'         -- complete menu
 
 -- font
-vim.opt.guifont='Consolas:h12:cANSI'
+-- vim.opt.guifont='Consolas:h12:cANSI'
 
 -- while j, k move, current line at last in [8, maxline - 8]
 vim.opt.scrolloff = 8

@@ -173,9 +173,7 @@ require('lspconfig').clangd.setup {
     capabilities = capabilities
 }
 
-require('lspconfig').pyright.setup {
-    capabilities = capabilities
-}
+require'lspconfig'.jedi_language_server.setup{}
 
 local signature_config = {
     log_path = "C:/tmp/sig.log",
@@ -186,8 +184,4 @@ local signature_config = {
 }
 -- require("lsp_signature").setup(signature_config)
 
-require ('lspconfig').emmet_ls.setup{
-    -- on_attach = on_attach,
-    capabilities = capabilities,
-    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
-}
+
